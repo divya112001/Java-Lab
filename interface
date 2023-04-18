@@ -1,0 +1,51 @@
+Create interfaces student and sports .create a class result implements student and sports.display the academic and sports score of a student.
+
+import java.util.*;
+import java.util.Scanner;
+interface Student
+{
+int score=15;
+void displayscore();
+}
+interface Sports
+{
+int score=30;
+void displaySportsscore();
+}
+class Result implements Student,Sports
+{
+public void displayscore()
+{
+System.out.println("Academic Score :"+ Student.score);
+}
+public void displaySportsscore()
+{
+System.out.println("Sports Score :"+Sports.score);
+}
+}
+class Sportstudent
+{
+public static void main(String [] args)
+{
+Result r=new Result();
+r.displayscore();
+r.displaySportsscore();
+}
+}
+
+
+
+
+
+Output
+********
+
+Academic Score :15
+Sports Score :30
+
+
+
+
+
+
+
