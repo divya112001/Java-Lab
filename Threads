@@ -1,0 +1,116 @@
+
+
+
+import java.util.Scanner;
+class Multiplication extends Thread{
+public void run()
+{
+try {
+for(int i=0;i<=10;i++)
+{
+System.out.println(i+"x5:"+(i*5));
+Thread.sleep(500);
+}
+}
+catch(InterruptedException e)
+{
+System.out.println("Multiplication thread interrupted ");
+}
+}
+}
+class Prime extends Thread
+{
+int limit,count,flag,i,j;
+Prime(int limit)//constructor
+{
+this.limit=limit;
+}
+public void run()
+{
+try
+{ksb@ksb-H410M-S2-V2:~/javaLab$ javac Threads.java
+ksb@ksb-H410M-S2-V2:~/javaLab$ java Threads
+Enter the limit :5
+prime numers are:2
+0x5:0
+prime numers are:3
+1x5:5
+2x5:10
+prime numers are:5
+3x5:15
+4x5:20
+prime numers are:7
+5x5:25
+6x5:30
+7x5:35
+8x5:40
+prime numers are:11
+9x5:45
+10x5:50
+ksb@ksb-H410M-S2-V2:~/javaLab$ 
+
+int j=2;
+while(count<limit)
+{
+flag=1;
+for(i=2;i<=(j-1);i++){
+if(j%i==0)
+{
+flag=0;
+break;
+}
+}
+if(flag==1)
+{
+System.out.println("prime numers are:"+j);
+count++;
+}
+j++;
+Thread.sleep(500);
+}
+}
+catch(InterruptedException e)
+{
+System.out.println("prime Thread Interrupted ");
+}
+}
+}
+class Threads
+{
+public static void main(String [] args)
+{
+Multiplication mul=new Multiplication();
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter the limit :");
+int l =sc.nextInt();
+Prime p = new Prime(l);
+mul.start();
+p.start();
+}
+}
+
+ **********************************************
+ 
+ OUTPUT
+ ksb@ksb-H410M-S2-V2:~/javaLab$ javac Threads.java
+ksb@ksb-H410M-S2-V2:~/javaLab$ java Threads
+Enter the limit :5
+prime numers are:2
+0x5:0
+prime numers are:3
+1x5:5
+2x5:10
+prime numers are:5
+3x5:15
+4x5:20
+prime numers are:7
+5x5:25
+6x5:30
+7x5:35
+8x5:40
+prime numers are:11
+9x5:45
+10x5:50
+ksb@ksb-H410M-S2-V2:~/javaLab$ 
+
+ 
