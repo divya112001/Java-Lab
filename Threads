@@ -1,4 +1,4 @@
-
+Q).Define 2 classes one for generating multiplication table of 5 and other for displaying first N prime numbers.implement using threads
 
 
 import java.util.Scanner;
