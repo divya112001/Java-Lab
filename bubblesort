@@ -1,6 +1,20 @@
 
 
-
+Enter the no.of elements 
+5
+Enter5elements
+b
+c
+g
+j
+k
+After sorting
+b
+c
+g
+j
+k
+ksb@ksb-H410M-S2
 import java.util.Scanner;
 class BubbleSort
 {
@@ -57,5 +71,21 @@ After sorting
 5
 6
 7
+
+Enter the no.of elements 
+5
+Enter5elements
+b
+c
+g
+j
+k
+After sorting
+b
+c
+g
+j
+k
+ksb@ksb-H410M-S2
 
 
