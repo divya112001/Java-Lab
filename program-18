@@ -88,36 +88,18 @@ choose option:
 3.Display Employees
 4.Exit
 Option:1
-Enter ID:12
+Enter ID:2
 Enter Name:anugrah
-Enter Salary:15600
-choose option:
-1.Add new Employee
-2.Search Employee
-3.Display Employees
-4.Exit
-Option:3
-EmpID	Name	Salary	
-12	anugrah		15600
-There is no employees
+Enter Salary:3400
 choose option:
 1.Add new Employee
 2.Search Employee
 3.Display Employees
 4.Exit
 Option:1
-Enter ID:13
+Enter ID:3
 Enter Name:Divya
-Enter Salary:3200
-choose option:
-1.Add new Employee
-2.Search Employee
-3.Display Employees
-4.Exit
-Option:2
-Enter eNo:12
-eNo	eName	eSalary	
-12	anugrah	15600
+Enter Salary:56000
 choose option:
 1.Add new Employee
 2.Search Employee
@@ -125,9 +107,18 @@ choose option:
 4.Exit
 Option:3
 EmpID	Name	Salary	
-12	anugrah		15600
-13	Divya		3200
+2	anugrah		3400
+3	Divya		56000
 There is no employees
+choose option:
+1.Add new Employee
+2.Search Employee
+3.Display Employees
+4.Exit
+Option:2
+Enter eNo:3
+eNo	eName	eSalary	
+3	Divya	56000
 choose option:
 1.Add new Employee
 2.Search Employee
