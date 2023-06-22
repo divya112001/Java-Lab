@@ -1,0 +1,37 @@
+//program to remove an object from the stack when the position is pased as parameter
+import java.util.*;
+public class Stacks{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+Stack <String>stack=new Stack<String>();
+stack.push("a");
+stack.push("b");
+stack.push("c");
+stack.push("d");
+stack.push("e");
+Iterator<String> itr=stack.iterator();
+System.out.print("Contents of stack :");
+while(itr.hasNext()){
+System.out.print(itr.next()+"\n");
+}
+System.out.print("\n Enter position of an object removed :");
+int i=sc.nextInt();
+stack.removeElementAt(i);
+itr=stack.iterator();
+System.out.print("Stack after an element removed:");
+while(itr.hasNext()){
+System.out.print(itr.next()+"\n");
+}
+}
+}
+
+**********************************************************************************************
+OUTPUT
+
+
+ksb@ksb-H410M-S2-V2:~/javaLab/collections$ javac Stacks.java
+ksb@ksb-H410M-S2-V2:~/javaLab/collections$ java Stacks
+Contents of stack:abcde
+ Enter position of an object removed :4
+Stack after an element removed:abcd
