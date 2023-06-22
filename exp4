@@ -1,0 +1,27 @@
+//program to demonstrate the crteation of set object using the linkedhashset class
+import java.util.*;
+public class LinkedHashsets{
+public static void main(String[] args)
+{
+LinkedHashSet<String>set=new LinkedHashSet<String>();
+set.add("a");
+set.add("b");
+set.add("c");
+set.add("d");
+Iterator<String>itr=set.iterator();
+System.out.print("Elements in the set :");
+while(itr.hasNext()){
+System.out.print(itr.next()+" ");
+}
+}
+}
+***************************************************
+
+OUTPUT
+
+ksb@ksb-H410M-S2-V2:~/javaLab/collections$ javac LinkedHashsets.java
+ksb@ksb-H410M-S2-V2:~/javaLab/collections$ java LinkedHashsets
+Elements in the set :a
+b
+c
+d
