@@ -1,0 +1,51 @@
+//Maintain a list of strings using ArrayList from collection framework,perform built in operations
+import java.util.*;
+class ArrayLists{
+public static void main(String [] args)
+{
+//create an array list object
+ArrayList<String>al=new ArrayList<String>();
+System.out.println("Initial size of al:"+al.size());
+//Add elements to the array list
+al.add("a");
+al.add("b");
+al.add("c");
+al.add("d");
+al.add("e");
+al.add("f");
+al.add(1,"a2");
+System.out.println("size of al after additions:"+al.size());
+//Display the array list contents
+System.out.println("Contents  of al:"+al);
+//The indexed get and set methods
+String str=al.get(2);
+al.set(2,str+"Updated");
+System.out.println("Contents of al after updation :"+al);
+//Remove elements from the array list
+al.remove("d");
+al.remove(2);
+System.out.println("size of al after deletions:"+al.size());
+System.out.println("Contents  of al:"+al);
+}
+}
+
+**************************************************************************************************************************
+
+OUTPUTksb@ksb-H410M-S2-V2:~/javaLab/collections$ javac  ArrayLists.java
+ksb@ksb-H410M-S2-V2:~/javaLab/collections$ java  ArrayLists
+Initial size of al:0
+size of al after additions:7
+Contents  of al:[a, a2, b, c, d, e, f]
+Contents of al after updation :[a, a2, bUpdated, c, d, e, f]
+size of al after deletions:5
+Contents  of al:[a, a2, c, e, f]
+
+
+ksb@ksb-H410M-S2-V2:~/javaLab/collections$ javac  ArrayLists.java
+ksb@ksb-H410M-S2-V2:~/javaLab/collections$ java  ArrayLists
+Initial size of al:0
+size of al after additions:7
+Contents  of al:[a, a2, b, c, d, e, f]
+Contents of al after updation :[a, a2, bUpdated, c, d, e, f]
+size of al after deletions:5
+Contents  of al:[a, a2, c, e, f]
